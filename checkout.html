@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Happy Kitchen</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <!-- Sama seperti di index.html -->
+    </header>
+
+    <main>
+        <section id="checkout">
+            <h2>Checkout</h2>
+            <form id="checkout-form">
+                <h3>Informasi Pengiriman</h3>
+                <input type="text" name="name" placeholder="Nama Lengkap" required>
+                <input type="tel" name="phone" placeholder="Nomor Telepon" required>
+                <textarea name="address" placeholder="Alamat Lengkap" required></textarea>
+                
+                <h3>Metode Pengiriman</h3>
+                <select name="delivery-method" required>
+                    <option value="delivery">Antar ke Alamat</option>
+                    <option value="pickup">Ambil di Toko</option>
+                </select>
+                
+                <h3>Metode Pembayaran</h3>
+                <select name="payment-method" required>
+                    <option value="transfer-bca">Transfer Bank BCA</option>
+                    <option value="transfer-bri">Transfer Bank BRI</option>
+                    <option value="gopay">GoPay</option>
+                    <option value="cash">Bayar Tunai saat Pengiriman</option>
+                </select>
+                
+                <div id="order-summary">
+                    <!-- Ringkasan pesanan akan ditambahkan di sini menggunakan JavaScript -->
+                </div>
+                
+                <button type="submit">Konfirmasi Pesanan</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Sama seperti di index.html -->
+    </footer>
+
+    <script src="js/checkout.js"></script>
+</body>
+</html>
