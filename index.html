@@ -8,43 +8,58 @@
     <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="main-header">
+        <div class="header-container">
             <div class="logo">
                 <img src="images/logo.png" alt="Happy Kitchen Logo">
             </div>
-            <ul class="nav-links">
-                <li><a href="#home">Beranda</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="#promo">Promo</a></li>
-                <li><a href="about.html">Tentang Kami</a></li>
-                <li><a href="contact.html">Kontak</a></li>
-            </ul>
-            <div class="auth-buttons">
-                <a href="login.html" class="btn btn-login">Masuk</a>
-                <a href="register.html" class="btn btn-register">Daftar</a>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="#home">Beranda</a></li>
+                    <li class="dropdown">
+                        <a href="menu.html">Menu</a>
+                        <ul class="dropdown-content">
+                            <li><a href="menu.html#bakso">Bakso</a></li>
+                            <li><a href="menu.html#kue-kering">Kue Kering</a></li>
+                            <li><a href="menu.html#jajanan-pasar">Jajanan Pasar</a></li>
+                            <li><a href="menu.html#kue-basah">Kue Basah</a></li>
+                            <li><a href="menu.html#minuman">Minuman</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#promo">Promo</a></li>
+                    <li><a href="about.html">Tentang Kami</a></li>
+                    <li><a href="contact.html">Kontak</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn btn-login">Masuk</a>
+                    <a href="register.html" class="btn btn-register">Daftar</a>
+                </div>
+                <div class="cart-icon">
+                    <a href="cart.html"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+                </div>
             </div>
-            <div class="cart-icon">
-                <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
-            </div>
-        </nav>
+        </div>
     </header>
 
     <main>
-        <section id="hero">
-            <video autoplay loop muted>
-                <source src="videos/bakso-promo.mp4" type="video/mp4">
-            </video>
+        <section id="hero" class="hero-section">
             <div class="hero-content">
-                <h1>Selamat Datang di Happy Kitchen</h1>
-                <p>Nikmati kelezatan bakso dan kue terbaik kami</p>
+                <h1 class="hero-title">Selamat Datang di Happy Kitchen</h1>
+                <p class="hero-subtitle">Nikmati kelezatan bakso dan kue terbaik kami</p>
+                <a href="menu.html" class="cta-button">Lihat Menu</a>
+            </div>
+            <div class="hero-video-container">
+                <video autoplay loop muted playsinline>
+                    <source src="videos/bakso-promo.mp4" type="video/mp4">
+                </video>
             </div>
         </section>
 
-        <section id="promo">
-            <h2>Promo Spesial Hari Ini</h2>
+        <section id="promo" class="promo-section">
+            <h2 class="section-title">Promo Spesial Hari Ini</h2>
             <div class="promo-container">
-                <!-- Tambahkan item promo di sini -->
                 <div class="promo-item">
                     <img src="images/promo1.jpg" alt="Promo 1">
                     <h3>Paket Hemat Bakso</h3>
@@ -58,8 +73,8 @@
             </div>
         </section>
 
-        <section id="gallery">
-            <h2>Galeri Makanan</h2>
+        <section id="gallery" class="gallery-section">
+            <h2 class="section-title">Galeri Makanan</h2>
             <div class="gallery-container">
                 <img src="images/bakso1.jpg" alt="Bakso Spesial">
                 <img src="images/kue-kering1.jpg" alt="Kue Kering">
@@ -70,7 +85,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="main-footer">
         <div class="footer-content">
             <div class="footer-section about">
                 <h3>Tentang Happy Kitchen</h3>
@@ -93,6 +108,23 @@
         </div>
     </footer>
 
+    <div id="live-chat" class="live-chat-container">
+        <button id="open-chat" class="open-chat-btn"><i class="fas fa-comments"></i></button>
+        <div id="chat-window" class="chat-window">
+            <div class="chat-header">
+                <h3>Live Chat</h3>
+                <button id="close-chat" class="close-chat-btn">&times;</button>
+            </div>
+            <div id="chat-messages" class="chat-messages"></div>
+            <form id="chat-form" class="chat-form">
+                <input type="text" id="chat-input" placeholder="Ketik pesan Anda...">
+                <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+
     <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/live-chat.js"></script>
 </body>
 </html>
