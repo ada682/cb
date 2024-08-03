@@ -6,151 +6,86 @@
     <title>Happy Kitchen - Bakso dan Kue Lezat</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="main-header">
-        <div class="header-container">
+    <header>
+        <nav class="container">
             <div class="logo">
                 <img src="images/logo.png" alt="Happy Kitchen Logo">
             </div>
-            <nav class="main-nav">
-                <ul class="nav-links">
-                    <li><a href="#home">Beranda</a></li>
-                    <li class="dropdown">
-                        <a href="menu.html">Menu</a>
-                        <ul class="dropdown-content">
-                            <li><a href="menu.html#bakso">Bakso</a></li>
-                            <li><a href="menu.html#kue-kering">Kue Kering</a></li>
-                            <li><a href="menu.html#jajanan-pasar">Jajanan Pasar</a></li>
-                            <li><a href="menu.html#kue-basah">Kue Basah</a></li>
-                            <li><a href="menu.html#minuman">Minuman</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#promo">Promo</a></li>
-                    <li><a href="about.html">Tentang Kami</a></li>
-                    <li><a href="contact.html">Kontak</a></li>
-                </ul>
-            </nav>
-            <div class="header-actions">
-                <div class="auth-buttons">
-                    <a href="login.html" class="btn btn-login">Masuk</a>
-                    <a href="register.html" class="btn btn-register">Daftar</a>
-                </div>
-                <div class="cart-icon">
-                    <a href="cart.html"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
-                </div>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#promo">Promo</a></li>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button class="btn btn-login">Masuk</button>
+                <button class="btn btn-register">Daftar</button>
+            </div>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
             </div>
             <button class="menu-toggle">
                 <i class="fas fa-bars"></i>
             </button>
-        </div>
+        </nav>
     </header>
+
     <main>
-        <section id="hero" class="hero-section">
+        <section id="home" class="hero">
             <div class="hero-content">
-                <h1 class="hero-title">Selamat Datang di Happy Kitchen</h1>
-                <p class="hero-subtitle">Nikmati kelezatan bakso dan kue terbaik kami</p>
-                <a href="menu.html" class="cta-button">Lihat Menu</a>
-            </div>
-            <div class="hero-video-container">
-                <video autoplay loop muted playsinline>
-                    <source src="videos/bakso-promo.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <h1>Selamat Datang di Happy Kitchen</h1>
+                <p>Nikmati kelezatan bakso dan kue terbaik kami</p>
+                <a href="#menu" class="cta-button">Lihat Menu</a>
             </div>
         </section>
 
-        <section id="featured-menu">
-            <h2>Menu Favorit</h2>
-            <div class="featured-items">
-                <!-- Menu favorit akan ditambahkan secara dinamis menggunakan JavaScript -->
-            </div>
-        </section>
-
-        <section id="promo">
-            <h2>Promo Spesial Hari Ini</h2>
-            <div class="promo-container">
-                <!-- Promo items akan ditambahkan secara dinamis menggunakan JavaScript -->
-            </div>
-        </section>
-
-        <section id="testimonials">
-            <h2>Apa Kata Pelanggan Kami</h2>
-            <div class="testimonial-slider">
-                <!-- Testimonial items akan ditambahkan secara dinamis menggunakan JavaScript -->
-            </div>
-        </section>
-
-        <section id="order-process">
-            <h2>Cara Memesan</h2>
-            <div class="order-steps">
-                <div class="step">
-                    <i class="fas fa-mouse-pointer"></i>
-                    <h3>Pilih Menu</h3>
-                    <p>Pilih makanan favorit Anda dari menu kami yang beragam</p>
+        <section id="menu" class="menu-section">
+            <div class="container">
+                <h2>Menu Favorit</h2>
+                <div class="menu-grid">
+                    <!-- Tambahkan item menu di sini -->
                 </div>
-                <div class="step">
-                    <i class="fas fa-shopping-cart"></i>
-                    <h3>Tambahkan ke Keranjang</h3>
-                    <p>Tambahkan item yang Anda inginkan ke keranjang belanja</p>
-                </div>
-                <div class="step">
-                    <i class="fas fa-credit-card"></i>
-                    <h3>Pembayaran</h3>
-                    <p>Pilih metode pembayaran yang Anda inginkan</p>
-                </div>
-                <div class="step">
-                    <i class="fas fa-utensils"></i>
-                    <h3>Nikmati Pesanan Anda</h3>
-                    <p>Tunggu pesanan Anda tiba dan nikmati kelezatannya</p>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonial-section">
+            <div class="container">
+                <h2>Apa Kata Pelanggan Kami</h2>
+                <div class="testimonial-grid">
+                    <!-- Tambahkan testimonial di sini -->
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="footer-content">
-            <div class="footer-section about">
-                <h3>Tentang Happy Kitchen</h3>
-                <p>Happy Kitchen adalah tempat terbaik untuk menikmati bakso lezat dan aneka kue berkualitas.</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tentang Kami</h3>
+                    <p>Happy Kitchen adalah tempat terbaik untuk menikmati bakso lezat dan aneka kue berkualitas.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <p>Email: info@happykitchen.com</p>
+                    <p>Telepon: 081273453402</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Ikuti Kami</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="footer-section contact">
-                <h3>Hubungi Kami</h3>
-                <p><i class="fas fa-phone"></i> 081273453402</p>
-                <p><i class="fas fa-envelope"></i> info@happykitchen.com</p>
-            </div>
-            <div class="footer-section social">
-                <h3>Ikuti Kami</h3>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            &copy; 2024 Happy Kitchen. All rights reserved.
         </div>
     </footer>
 
-    <div id="live-chat" class="live-chat-container">
-        <button id="live-chat-toggle" class="live-chat-toggle">
-            <i class="fas fa-comments"></i>
-        </button>
-        <div class="live-chat-window" style="display: none;">
-            <div class="chat-header">
-                <h3>Live Chat</h3>
-                <button class="close-chat"><i class="fas fa-times"></i></button>
-            </div>
-            <div class="chat-messages"></div>
-            <form class="chat-input-form">
-                <input type="text" placeholder="Ketik pesan Anda..." required>
-                <button type="submit"><i class="fas fa-paper-plane"></i></button>
-            </form>
-        </div>
-    </div>
-
     <script src="js/main.js"></script>
-    <script src="js/cart.js"></script>
-    <script src="js/live-chat.js"></script>
 </body>
 </html>
