@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Kitchen - Bakso dan Kue Lezat</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -40,9 +41,11 @@
                     <a href="cart.html"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
                 </div>
             </div>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </header>
-
     <main>
         <section id="hero" class="hero-section">
             <div class="hero-content">
@@ -53,39 +56,60 @@
             <div class="hero-video-container">
                 <video autoplay loop muted playsinline>
                     <source src="videos/bakso-promo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
                 </video>
             </div>
         </section>
 
-        <section id="promo" class="promo-section">
-            <h2 class="section-title">Promo Spesial Hari Ini</h2>
-            <div class="promo-container">
-                <div class="promo-item">
-                    <img src="images/promo1.jpg" alt="Promo 1">
-                    <h3>Paket Hemat Bakso</h3>
-                    <p>Beli 2 porsi bakso dapatkan gratis 1 es teh</p>
-                </div>
-                <div class="promo-item">
-                    <img src="images/promo2.jpg" alt="Promo 2">
-                    <h3>Diskon Kue Lebaran</h3>
-                    <p>Diskon 20% untuk pembelian kue kering lebih dari 1 kg</p>
-                </div>
+        <section id="featured-menu">
+            <h2>Menu Favorit</h2>
+            <div class="featured-items">
+                <!-- Menu favorit akan ditambahkan secara dinamis menggunakan JavaScript -->
             </div>
         </section>
 
-        <section id="gallery" class="gallery-section">
-            <h2 class="section-title">Galeri Makanan</h2>
-            <div class="gallery-container">
-                <img src="images/bakso1.jpg" alt="Bakso Spesial">
-                <img src="images/kue-kering1.jpg" alt="Kue Kering">
-                <img src="images/jajanan-pasar1.jpg" alt="Jajanan Pasar">
-                <img src="images/kue-basah1.jpg" alt="Kue Basah">
-                <img src="images/minuman1.jpg" alt="Minuman Segar">
+        <section id="promo">
+            <h2>Promo Spesial Hari Ini</h2>
+            <div class="promo-container">
+                <!-- Promo items akan ditambahkan secara dinamis menggunakan JavaScript -->
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <h2>Apa Kata Pelanggan Kami</h2>
+            <div class="testimonial-slider">
+                <!-- Testimonial items akan ditambahkan secara dinamis menggunakan JavaScript -->
+            </div>
+        </section>
+
+        <section id="order-process">
+            <h2>Cara Memesan</h2>
+            <div class="order-steps">
+                <div class="step">
+                    <i class="fas fa-mouse-pointer"></i>
+                    <h3>Pilih Menu</h3>
+                    <p>Pilih makanan favorit Anda dari menu kami yang beragam</p>
+                </div>
+                <div class="step">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h3>Tambahkan ke Keranjang</h3>
+                    <p>Tambahkan item yang Anda inginkan ke keranjang belanja</p>
+                </div>
+                <div class="step">
+                    <i class="fas fa-credit-card"></i>
+                    <h3>Pembayaran</h3>
+                    <p>Pilih metode pembayaran yang Anda inginkan</p>
+                </div>
+                <div class="step">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Nikmati Pesanan Anda</h3>
+                    <p>Tunggu pesanan Anda tiba dan nikmati kelezatannya</p>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer class="main-footer">
+    <footer>
         <div class="footer-content">
             <div class="footer-section about">
                 <h3>Tentang Happy Kitchen</h3>
@@ -109,15 +133,17 @@
     </footer>
 
     <div id="live-chat" class="live-chat-container">
-        <button id="open-chat" class="open-chat-btn"><i class="fas fa-comments"></i></button>
-        <div id="chat-window" class="chat-window">
+        <button id="live-chat-toggle" class="live-chat-toggle">
+            <i class="fas fa-comments"></i>
+        </button>
+        <div class="live-chat-window" style="display: none;">
             <div class="chat-header">
                 <h3>Live Chat</h3>
-                <button id="close-chat" class="close-chat-btn">&times;</button>
+                <button class="close-chat"><i class="fas fa-times"></i></button>
             </div>
-            <div id="chat-messages" class="chat-messages"></div>
-            <form id="chat-form" class="chat-form">
-                <input type="text" id="chat-input" placeholder="Ketik pesan Anda...">
+            <div class="chat-messages"></div>
+            <form class="chat-input-form">
+                <input type="text" placeholder="Ketik pesan Anda..." required>
                 <button type="submit"><i class="fas fa-paper-plane"></i></button>
             </form>
         </div>
