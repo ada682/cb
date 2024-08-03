@@ -1,0 +1,56 @@
+<!-- reviews.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ulasan - Happy Kitchen</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!-- Header content -->
+    </header>
+    <main class="reviews-page">
+        <h2>Ulasan Pelanggan</h2>
+        <div class="reviews-container">
+            <div class="overall-rating">
+                <h3>Rating Keseluruhan</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>4.5 dari 5 bintang</p>
+            </div>
+            <div class="review-list" id="review-list">
+                <!-- Review items will be added here dynamically -->
+            </div>
+            <form id="review-form">
+                <h3>Tambahkan Ulasan Anda</h3>
+                <div class="rating-input">
+                    <input type="radio" id="star5" name="rating" value="5" required>
+                    <label for="star5"><i class="fas fa-star"></i></label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4"><i class="fas fa-star"></i></label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3"><i class="fas fa-star"></i></label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2"><i class="fas fa-star"></i></label>
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1"><i class="fas fa-star"></i></label>
+                </div>
+                <textarea name="review" placeholder="Tulis ulasan Anda di sini" required></textarea>
+                <button type="submit">Kirim Ulasan</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <!-- Footer content -->
+    </footer>
+    <script src="js/reviews.js"></script>
+</body>
+</html>
