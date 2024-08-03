@@ -1,3 +1,4 @@
+<!-- checkout.html -->
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -5,16 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout - Happy Kitchen</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <!-- Sama seperti di index.html -->
+        <!-- Header content -->
     </header>
-
-    <main>
-        <section id="checkout">
-            <h2>Checkout</h2>
+    <main class="checkout-page">
+        <h2>Checkout</h2>
+        <div class="checkout-container">
+            <div class="order-summary">
+                <h3>Ringkasan Pesanan</h3>
+                <ul id="order-items"></ul>
+                <p>Total: <span id="order-total"></span></p>
+            </div>
             <form id="checkout-form">
                 <h3>Informasi Pengiriman</h3>
                 <input type="text" name="name" placeholder="Nama Lengkap" required>
@@ -35,19 +39,14 @@
                     <option value="cash">Bayar Tunai saat Pengiriman</option>
                 </select>
                 
-                <div id="order-summary">
-                    <!-- Ringkasan pesanan akan ditambahkan di sini menggunakan JavaScript -->
-                </div>
-                
                 <button type="submit">Konfirmasi Pesanan</button>
             </form>
-        </section>
+        </div>
     </main>
-
     <footer>
-        <!-- Sama seperti di index.html -->
+        <!-- Footer content -->
     </footer>
-
+    <script src="js/cart.js"></script>
     <script src="js/checkout.js"></script>
 </body>
 </html>
