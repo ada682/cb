@@ -5,59 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Kitchen - Bakso dan Kue Lezat</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav class="container">
-            <div class="logo">
-                <img src="images/logo.png" alt="Happy Kitchen Logo">
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">Beranda</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#promo">Promo</a></li>
-                <li><a href="#about">Tentang Kami</a></li>
-                <li><a href="#contact">Kontak</a></li>
-            </ul>
-            <div class="auth-buttons">
-                <button class="btn btn-login">Masuk</button>
-                <button class="btn btn-register">Daftar</button>
-            </div>
-            <div class="cart-icon">
-                <i class="fas fa-shopping-cart"></i>
-                <span class="cart-count">0</span>
-            </div>
-            <button class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
-        </nav>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="images/logo.png" alt="Happy Kitchen Logo">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li class="dropdown">
+                        <a href="#">Menu <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="makanan.html">Makanan</a></li>
+                            <li><a href="minuman.html">Minuman</a></li>
+                            <li><a href="jajanan-pasar.html">Jajanan Pasar</a></li>
+                            <li><a href="kue-kering.html">Kue Kering</a></li>
+                            <li><a href="kue-basah.html">Kue Basah</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="promo.html">Promo</a></li>
+                    <li><a href="tentang-kami.html">Tentang Kami</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <button class="btn btn-login">Masuk</button>
+                    <button class="btn btn-register">Daftar</button>
+                </div>
+                <div class="cart-icon">
+                    <a href="cart.html"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+                </div>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h1>Selamat Datang di Happy Kitchen</h1>
-                <p>Nikmati kelezatan bakso dan kue terbaik kami</p>
-                <a href="#menu" class="cta-button">Lihat Menu</a>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Selamat Datang di Happy Kitchen</h1>
+                    <p>Nikmati kelezatan bakso dan kue terbaik kami</p>
+                    <a href="#menu-favorit" class="cta-button">Lihat Menu</a>
+                </div>
             </div>
         </section>
 
-        <section id="menu" class="menu-section">
+        <section id="menu-favorit" class="menu-section">
             <div class="container">
                 <h2>Menu Favorit</h2>
                 <div class="menu-grid">
-                    <!-- Tambahkan item menu di sini -->
+                    <!-- Tambahkan item menu favorit di sini -->
                 </div>
             </div>
         </section>
 
-        <section id="testimonials" class="testimonial-section">
+        <section class="promo-section">
+            <div class="container">
+                <h2>Promo Spesial</h2>
+                <!-- Tambahkan konten promo di sini -->
+            </div>
+        </section>
+
+        <section class="testimonial-section">
             <div class="container">
                 <h2>Apa Kata Pelanggan Kami</h2>
-                <div class="testimonial-grid">
-                    <!-- Tambahkan testimonial di sini -->
-                </div>
+                <!-- Tambahkan testimonial di sini -->
             </div>
         </section>
     </main>
@@ -66,13 +84,13 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Tentang Kami</h3>
-                    <p>Happy Kitchen adalah tempat terbaik untuk menikmati bakso lezat dan aneka kue berkualitas.</p>
+                    <h3>Happy Kitchen</h3>
+                    <p>Menyajikan bakso dan kue lezat sejak 2010</p>
                 </div>
                 <div class="footer-section">
-                    <h3>Kontak</h3>
+                    <h3>Hubungi Kami</h3>
                     <p>Email: info@happykitchen.com</p>
-                    <p>Telepon: 081273453402</p>
+                    <p>Telepon: (021) 1234-5678</p>
                 </div>
                 <div class="footer-section">
                     <h3>Ikuti Kami</h3>
@@ -82,6 +100,9 @@
                         <a href="#"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Happy Kitchen. All rights reserved.</p>
             </div>
         </div>
     </footer>
