@@ -1,3 +1,4 @@
+<!-- profile.html -->
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -5,29 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profil - Happy Kitchen</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <!-- Header yang sama seperti halaman lain -->
+        <!-- Header content -->
     </header>
-
     <main class="profile-page">
         <div class="profile-container">
-            <h2>Profil Anda</h2>
+            <h2>Profil Pengguna</h2>
             <div class="profile-info">
-                <img src="images/default-avatar.png" alt="Profile Picture" class="profile-picture">
+                <img src="images/default-avatar.png" alt="Profile Picture" id="profile-picture">
                 <h3 id="user-name">Nama Pengguna</h3>
                 <p id="user-email">email@example.com</p>
             </div>
             <div class="profile-sections">
                 <section class="order-history">
                     <h3>Riwayat Pesanan</h3>
-                    <!-- Riwayat pesanan akan ditambahkan melalui JavaScript -->
+                    <ul id="order-history-list"></ul>
                 </section>
                 <section class="favorite-addresses">
                     <h3>Alamat Favorit</h3>
-                    <!-- Alamat favorit akan ditambahkan melalui JavaScript -->
+                    <ul id="favorite-addresses-list"></ul>
                 </section>
                 <section class="loyalty-points">
                     <h3>Poin Loyalitas</h3>
@@ -36,11 +35,9 @@
             </div>
         </div>
     </main>
-
     <footer>
-        <!-- Footer yang sama seperti halaman lain -->
+        <!-- Footer content -->
     </footer>
-
     <script src="js/profile.js"></script>
 </body>
 </html>
