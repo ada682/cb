@@ -4,6 +4,7 @@
     --accent-color: #4ECDC4;
     --text-color: #333;
     --bg-color: #FFF;
+    --light-bg: #F9F9F9;
 }
 
 * {
@@ -19,10 +20,44 @@ body {
     background-color: var(--bg-color);
 }
 
+.playfair {
+    font-family: 'Playfair Display', serif;
+}
+
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+/* Animations */
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 30px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
 }
 
 /* Header Styles */
@@ -334,6 +369,10 @@ footer {
     border-bottom: 1px solid #eee;
 }
 
+.cart-item:hover {
+    transform: translateY(-5px);
+}
+    
 .cart-item img {
     width: 80px;
     height: 80px;
@@ -365,4 +404,25 @@ footer {
     width: 40px;
     text-align: center;
     margin: 0 10px;
+}
+
+/* ... (add more styles for other pages) ... */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cart-container {
+        flex-direction: column;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+    
+    .auth-buttons {
+        display: none;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
 }
