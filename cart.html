@@ -5,28 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Keranjang Belanja - Happy Kitchen</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <!-- Sama seperti di index.html -->
+        <!-- Header content -->
     </header>
 
-    <main>
-        <section id="cart">
-            <h2>Keranjang Belanja</h2>
-            <div id="cart-items">
-                <!-- Item keranjang akan ditambahkan di sini menggunakan JavaScript -->
+    <main class="cart-page">
+        <div class="container">
+            <h1>Keranjang Belanja</h1>
+            <div class="cart-container">
+                <div class="cart-items">
+                    <!-- Cart items will be dynamically added here -->
+                </div>
+                <div class="cart-summary">
+                    <h2>Ringkasan Pesanan</h2>
+                    <div class="summary-item">
+                        <span>Subtotal</span>
+                        <span id="subtotal">Rp 0</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Ongkos Kirim</span>
+                        <span id="shipping">Rp 0</span>
+                    </div>
+                    <div class="summary-item total">
+                        <span>Total</span>
+                        <span id="total">Rp 0</span>
+                    </div>
+                    <button class="btn btn-primary" id="checkout-btn">Lanjutkan ke Pembayaran</button>
+                </div>
             </div>
-            <div id="cart-total">
-                <h3>Total: <span id="total-amount">Rp 0</span></h3>
-            </div>
-            <button id="checkout-btn">Lanjutkan ke Pembayaran</button>
-        </section>
+        </div>
     </main>
 
     <footer>
-        <!-- Sama seperti di index.html -->
+        <!-- Footer content -->
     </footer>
 
     <script src="js/cart.js"></script>
