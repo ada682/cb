@@ -6,32 +6,47 @@
     <title>Keranjang Belanja - Happy Kitchen</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <!-- Header content -->
+        <!-- Same header as index.html -->
     </header>
 
-    <main class="cart-page">
+    <main class="cart-page animated fadeIn">
         <div class="container">
-            <h1>Keranjang Belanja</h1>
+            <h1 class="page-title playfair">Keranjang Belanja</h1>
             <div class="cart-container">
                 <div class="cart-items">
                     <!-- Cart items will be dynamically added here -->
+                    <div class="cart-item animated fadeInUp">
+                        <img src="images/bakso-special.jpg" alt="Bakso Special">
+                        <div class="cart-item-details">
+                            <h3>Bakso Special</h3>
+                            <p>Rp 25.000</p>
+                            <div class="quantity-controls">
+                                <button class="quantity-btn minus"><i class="fas fa-minus"></i></button>
+                                <input type="number" value="1" min="1" class="quantity-input">
+                                <button class="quantity-btn plus"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                        <button class="remove-item"><i class="fas fa-trash"></i></button>
+                    </div>
+                    <!-- Add more cart items -->
                 </div>
-                <div class="cart-summary">
-                    <h2>Ringkasan Pesanan</h2>
+                <div class="cart-summary animated fadeInRight">
+                    <h2 class="playfair">Ringkasan Pesanan</h2>
                     <div class="summary-item">
                         <span>Subtotal</span>
-                        <span id="subtotal">Rp 0</span>
+                        <span id="subtotal">Rp 25.000</span>
                     </div>
                     <div class="summary-item">
                         <span>Ongkos Kirim</span>
-                        <span id="shipping">Rp 0</span>
+                        <span id="shipping">Rp 10.000</span>
                     </div>
                     <div class="summary-item total">
                         <span>Total</span>
-                        <span id="total">Rp 0</span>
+                        <span id="total">Rp 35.000</span>
                     </div>
                     <button class="btn btn-primary" id="checkout-btn">Lanjutkan ke Pembayaran</button>
                 </div>
@@ -40,7 +55,7 @@
     </main>
 
     <footer>
-        <!-- Footer content -->
+        <!-- Same footer as index.html -->
     </footer>
 
     <script src="js/cart.js"></script>
